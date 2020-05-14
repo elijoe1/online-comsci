@@ -5,6 +5,7 @@ import matplotlib.colors as colors
 import matplotlib.animation as animation
 import matplotlib.patches as mpatches
 import matplotlib.patheffects as pe
+import os
 
 # setting up values for the grid:
 # susceptible
@@ -196,7 +197,8 @@ def main():
                 c=c, linewidth=3,
                 path_effects=[pe.Stroke(linewidth=2,
                                         foreground='b'), pe.Normal()])
-    fig.savefig('line_graph.png')
+    os.chdir('/Users/elijoe/Documents/Online/online-comsci/Epidemiology')
+    plt.savefig('line_graph.png')
 
 
 # call main
