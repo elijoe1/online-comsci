@@ -147,7 +147,8 @@ def update(frameNum, img, state_grid, N):
     # the corresponding list in the states dictionary
     unique, counts = np.unique(state_grid, return_counts=True)
     number = dict(zip(unique, counts/500))
-    print(number)
+    print(list(number.keys()))
+    print(list(number.values()))
     for key in number:
         states[key].append(number[key])
     # replaces old grid with new one and returns it
