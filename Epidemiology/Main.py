@@ -26,7 +26,7 @@ beta = 0.4
 # recovery chance given infection
 gamma = 0.4
 # chance of death
-death = 0.05
+death = 0.07
 # chance of loss of immunity
 mu = 0.05
 # chance of vaccination
