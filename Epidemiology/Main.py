@@ -22,15 +22,15 @@ V = 4
 
 # setting up parameters
 # infection chance given contact
-beta = 0.01
+beta = 0.4
 # recovery chance given infection
-gamma = 0.01
+gamma = 0.4
 # chance of death
-death = 0.0001
+death = 0.0
 # chance of loss of immunity
-mu = 0.005
+mu = 0.05
 # chance of vaccination
-vacc = 0.001
+vacc = 0.0
 
 # increases in state change chance according to
 # number of turns spent in a given state
@@ -147,8 +147,8 @@ def update(frameNum, img, state_grid, N):
     # the corresponding list in the states dictionary
     unique, counts = np.unique(state_grid, return_counts=True)
     number = dict(zip(unique, counts/500))
-    print(list(number.keys()))
-    print(list(number.values()))
+    # print(list(number.keys()))
+    # print(list(number.values()))
     for key in number:
         states[key].append(number[key])
     # replaces old grid with new one and returns it
