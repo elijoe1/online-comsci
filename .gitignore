@@ -130,3 +130,6 @@ dmypy.json
 
 # to ignore produced line graph
 *.png
+
+# to ignore file management hidden file
+.DS_Store
