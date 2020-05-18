@@ -133,3 +133,6 @@ dmypy.json
 
 # to ignore file management hidden file
 .DS_Store
+
+# to ignore vscode workspace configuration file
+*.code-workspace
