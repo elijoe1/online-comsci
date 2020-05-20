@@ -14,5 +14,3 @@ for item in coords:
         pass
 
 print(count/num * 4)
-
-# making some changes to check that my fresh git reinstall worked
